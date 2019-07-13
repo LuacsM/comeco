@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+
+body{
+    background-color: #7bb3ff;
+}
+
+header{
+
+	position: sticky;
+	top: 0px;
+	left: 0;
+	z-index: 100;
+	max-width: 100%;
+
+	padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5); 
+	width: 100%;
+      
+	background: url(hero.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	transition: 1s;
+    
+			
+}
+
+.col-4 img{
+    max-width: 100%;
+}
+
+.logo{
+	color: #424242;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav{
+	float: right;
+	
+}
+
+header.black{
+      background-color: #373854;
+}
+
+
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-right: 30px;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	display: block;
+	margin: 10px 5px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+	background: #9e379f;
+	color: #fff;
+	transition: 0.5s;
+    border-radius: 5px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#showcase {
+  min-height: 525px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  border-radius: 50px;
+  margin: 0.5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+  transition: 1s;
+}
+
+#seção-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+.slider {
+	position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 100;
+  	position: absolute;
+    z-index: 0;
+    
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+  	width: 100%;
+  	height: 100%;
+
+
+}
+
+.ex{
+
+}
+
+#showcase h1 {
+	font-size: 80px;
+  padding-top: 0px;
+  padding-bottom: 10;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+.content-wrap{
+    grid-column: 2/4;
+  }
+
+  #seção-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+
+@media(max-width: 768px){
+
+	header{
+		background-color: #373854;
+        z-index: 100;
+	}
+	.menu{
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+	}
+	.menu:before{
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+
+	}
+	.menu.active:before{
+		content: '\f00d';
+		font-family: fontAwesome;
+		line-height: 40px;
+
+	}
+	nav{
+		display: none;
+	}
+	nav.active{
+		display: block;
+		width: 100%;
+	}
+	nav.active ul{
+		display: block;
+	}
+
+	nav.active ul li a{
+		margin: 5;
+	}
+    
+    nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+    }
+    
+    #showcase {
+      min-height: 330px;
+    }
+    
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+}
